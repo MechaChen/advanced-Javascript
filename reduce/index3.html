@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>reduce</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, -1, 2, 3];
+
+      //   原本的方法
+      //   const sum = 0;
+      //   for (let i of numbers) sum += i;
+
+      //   reduce 函式
+      //   reduce(function(收集者, 現在值) {}, 收集者初始值);
+
+      //   a = 0, c = 1 => a = 1
+      //   a = 1, c = -1 => a = 0
+      //   a = 0, c = 2 => a = 2
+      //   a = 2, c = 3 => a = 5
+      //   const sum = numbers.reduce(
+      //     (accumlator, currentValue) => accumlator + currentValue,
+      //     0
+      //   );
+
+      // reduce 函式(沒有初始值)
+      //   a = 1, c = -1 => a = 0
+      //   a = 0, c = 2 => a = 2
+      //   a = 2, c = 3 => a = 5
+      const sum = numbers.reduce(
+        (accumlator, currentVale) => accumlator + currentValue
+      );
+
+      console.log(sum);
+    </script>
+  </body>
+</html>
